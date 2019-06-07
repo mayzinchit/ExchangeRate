@@ -1,0 +1,14 @@
+{
+    "info":"Central Bank of Myanmar",
+    "description":"Official Website of Central Bank of Myanmar",
+    "timestamp": 1341077400,
+    "rates": {
+        "USD": "882",
+        "AUD": "864",
+        "GBP": "1288",
+        "EUR": "1073",
+        "INR": "15",
+        "JPY": "983",
+        "CHF": "888"
+    }
+}

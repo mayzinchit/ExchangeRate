@@ -1,0 +1,14 @@
+{
+    "info":"Central Bank of Myanmar",
+    "description":"Official Website of Central Bank of Myanmar",
+    "currencies": {
+        "EUR": "Euro",
+        "GBP": "Pound sterling",
+        "CHF": "Swiss franc",
+        "JPY": "Japanese yen",
+        "AUD": "Australian dollar",
+        "USD": "United State Dollar",
+        "INR": "Indian rupee",
+        "Peso": "Phillipines Peso"
+    }
+}

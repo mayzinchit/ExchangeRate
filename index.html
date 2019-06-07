@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Exchange</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+   <!--  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet" type="text/css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/semantic-ui-css@2.2.9/semantic.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <div class="banner_part">
+        <div class="container" id="root">
+            <nav class="navbar bg-dark mb-3">
+                <h3 class="text-light">CURRENCY EXCHANGE RATES</h3>
+                
+                <div class="float-left">
+                <datepicker v-model="date"></datepicker>
+            </div>
+              
+            </nav>
+            
+            <table class="table table-hover">
+                <thead class="bg-dark">
+                    <tr>
+                        <th class="text-light">Currency</th>
+                        <th class="text-light">Currency Name</th>
+                        <th class="text-light">Exchange Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary" v-for="rate,key in info.rates">
+                        <th scope="row">{{key}}</th>
+                        <td>{{keep.currencies[key]}}</td>
+                        <td>{{rate}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/flatpickr"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<!-- <script src="https://unpkg.com/vuejs-datepicker"></script> -->
+<script type="text/javascript" src="js/exchange.js"></script>
+</body>
+</html>
